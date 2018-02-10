@@ -1,0 +1,20 @@
+{% extends "mainsite/base.jinja" %}
+{% block extracss %}
+{% endblock %}
+{% block content %}
+    {% include 'mainsite/header.jinja' %}
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Welcome to QwikiExpert</h1>
+            <p>
+                <a class="btn btn-primary btn-lg" href="{{ url('login') }}">Start now</a>
+            </p>
+        </div>
+    </div>
+{% endblock %}
+{% block extrascripts %}
+    <script>
+    	$(document).ready(function() {
+    	});
+    </script>
+{% endblock %}
